@@ -9,6 +9,6 @@ ds.n.isel(x=3).plot()
 plt.show()
 
 
-reflection_points = calculate_cut_off_layer(ds, 2)
-plt.plot(reflection_points)
+cut_off_layer_positions = calculate_cut_off_layer(ds, 2)
+plt.plot(cut_off_layer_positions)
 plt.show()
