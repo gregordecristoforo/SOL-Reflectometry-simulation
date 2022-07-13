@@ -2,7 +2,7 @@ import xarray as xr
 import numpy as np
 
 
-def calculate_reflection_point(ds: xr.Dataset, threshold: float) -> np.ndarray:
+def calculate_cut_off_layer(ds: xr.Dataset, threshold: float) -> np.ndarray:
     ds["threshold_exceeded"] = ds["n"] > threshold
     reflection_points = []
     for time in ds.t.values:
